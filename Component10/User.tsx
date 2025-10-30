@@ -1,0 +1,16 @@
+interface UserProps{
+    name : string,
+    age : number,
+    clickHandler : () => void,
+}
+
+export default function User(props : UserProps) {
+    const {name , age, clickHandler} = props;
+    return (
+        <>
+            <h1>name : {name}</h1>
+            <h2>age : {age}</h2>
+            <button onClick={clickHandler}>클릭하세요</button>
+        </>
+    )
+}
